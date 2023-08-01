@@ -10,7 +10,47 @@
 ==/UserStyle== */
 
 @-moz-document domain("intra.epitech.eu") {
-  :root {
-    --test: "ok";
-  }
+ :root {
+		--blue: #8aadf4;
+		--text: #cad3f5;
+		--subtext1: #b8c0e0;
+		--subtext0: #a5adcb;
+		--overlay2: #939ab7;
+		--overlay1: #8087a2;
+		--overlay0: #6e738d;
+		--surface2: #5b6078;
+		--surface1: #494d64;
+		--surface0: #363a4f;
+		--base: #24273a;
+		--mantle: #1e2030;
+		--crust: #181926;
+	}
+
+	#footer {
+		height: auto;
+		padding: 4em 1em;
+
+		position: initial;
+		background: var(--mantle);
+
+		.footer-wrapper ul {
+			margin-top: 0;
+
+			li {
+				background: none;
+				padding-left: 0px;
+				list-style-type: disclosure-closed;
+				color: var(--surface2);
+			}
+		}
+
+		a {
+			color: var(--text);
+
+			&:hover {
+				color: var(--blue);
+				text-decoration: none;
+			}
+		}
+	}
 }
