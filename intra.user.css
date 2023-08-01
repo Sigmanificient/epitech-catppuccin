@@ -26,8 +26,6 @@
 		--crust: #181926;
 	}
 
-/* Style Normalization */
-
 	#header {
 		.intra {
 			 height: 64px;
@@ -195,6 +193,10 @@
 		}
 	}
 
+	#main {
+		margin-top: 0;
+	}
+
 	#sidebar {
 		min-width: 3rem !important;
 		background: var(--mantle);
@@ -294,6 +296,26 @@
 		}
 	}
 
+	#breadcrumb {
+		ul {
+			li {
+				background: var(--mantle);
+				color: var(--text);
+
+				&:first-child {
+					border-left: 4px solid var(--blue);
+					background: var(--mantle);
+					color: var(--text);
+				}
+
+				&.home a span.icon {
+					margin-left: 0px;
+					filter: grayscale(1) brightness(100);
+				}
+			}
+		}
+	}
+
 	#footer {
 		padding: 4em 1em;
 
@@ -321,3 +343,4 @@
 		}
 	}
 }
+
