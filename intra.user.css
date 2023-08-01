@@ -33,12 +33,48 @@
 
 				#language {
 					margin: 0;
-
 					display: flex;
 					flex-direction: column;
-
 					height: 100%;
 					width: auto;
+				}
+
+				#identification {
+					height: 100%;
+
+					a.infos {
+						margin: 0;
+						height: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 0;
+						text-decoration: none;
+
+						span.picture {
+							width: 0;
+							visibility: hidden;
+						}
+
+						span.title {
+							margin-left: 0;
+						}
+					}
+				}
+
+				#notification {
+					margin-top: 0;
+					height: 100%;
+					padding: 0 2em;
+					display: flex;
+					align-items: center;
+					border-radius: 0;
+
+					.dropdown {
+						&:hover a {
+							border-radius: 0;
+						}
+					}
 				}
 
 				.navigation {
