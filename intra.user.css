@@ -197,6 +197,52 @@
 		margin-top: 0;
 	}
 
+	body#admin {
+		background:  var(--crust);
+
+		#main {
+			.item.title {
+				margin-top: 2em;
+			}
+
+			h1, h2 {
+				color: var(--text);
+				margin-bottom: 1em;
+			}
+
+			p {
+				color: var(--subtext1);
+			}
+
+			#content {
+				a {
+					span.icon {
+						display: none;
+						visibility: hidden;
+						width: 0 !important;
+						margin: 0 !important;
+					}
+
+					color: var(--subtext0);
+				}
+
+				.bloc.main {
+					p {
+						display: none;
+					}
+
+				  display: flex;
+				}
+
+
+				.bloc.main > .group {
+					padding: 3em 20em 3em 3em;
+					background: var(--mantle);
+				}
+			}
+		}
+	}
+
 	#sidebar {
 		min-width: 3rem !important;
 		background: var(--mantle);
@@ -343,4 +389,3 @@
 		}
 	}
 }
-
