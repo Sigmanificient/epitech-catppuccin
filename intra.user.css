@@ -26,6 +26,28 @@
 		--crust: #181926;
 	}
 
+	#header {
+		.intra {
+			.header-wrapper {
+				position: relative;
+
+				#language {
+					margin: 0;
+
+					display: flex;
+					flex-direction: column;
+
+					height: 100%;
+					width: auto;
+				}
+
+				.navigation {
+					width: 100vw;
+				}
+			}
+		}
+	}
+
 	#footer {
 		height: auto;
 		padding: 4em 1em;
