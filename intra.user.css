@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name Epitech Catppuccin
+@description Catppuccin theme for the Epitech internal site.
+@namespace intra.epitech.eu
+@version 1.0.0
+@author Sigmanifcient
+@license MIT
+
+@preprocessor less
+==/UserStyle== */
+
+@-moz-document domain("intra.epitech.eu") {
+  :root {
+    --test: "ok";
+  }
+}
