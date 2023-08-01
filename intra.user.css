@@ -37,9 +37,9 @@
 				position: relative;
 
 				.reserved {
-					display: none;
-					visibility: hidden;
-					width: 0;
+					background-size: 75%;
+					background-color: var(--base);
+					height: 100%;
 				}
 
 				#language {
@@ -191,6 +191,105 @@
 
 			td.administration span.icon {
 				background-position: -43px -192px;
+			}
+		}
+	}
+
+	#sidebar {
+		min-width: 3rem !important;
+		background: var(--mantle);
+
+		&.fold #toggle-sidebar {
+			padding: 1rem;
+		}
+
+		.title {
+			span.icon {
+				display: none;
+			}
+
+			span.label {
+				margin: 0;
+				padding: 1rem;
+				display: flex;
+				align-items: center;
+				font-weight: bold;
+			}
+		}
+
+		#toggle-sidebar {
+			&:hover {
+				background: var(--surface1);
+			}
+
+			padding: 1rem;
+			width: auto;
+			height: auto;
+			aspect-ratio: 1/1;
+			border-radius: 0;
+		}
+
+		form.filter.course {
+			.filters {
+				border-top: none;
+
+				.resume {
+					color: var(--subtext1);
+				}
+			}
+
+			.button.expand-filters {
+				background: var(--surface0);
+				border-top: 0;
+				border-bottom: 0;
+
+				&:hover {
+					background: var(--surface1);
+				}
+
+				a, span.label {
+					color: var(--text);
+				}
+
+				.transparency {
+  				background-color: none;
+				}
+			}
+
+			.datatree {
+				dl {
+					border-bottom: 1px solid var(--surface2);
+
+					dt.semester {
+						background: var(--surface0);
+
+						&.current {
+							background: var(--surface1);
+
+							span {
+								span {
+							    background: transparent;
+						    }
+
+								a:after {
+									content: ' (current)';
+								}
+							}
+						}
+
+						&.expanded {
+							box-shadow: none;
+						}
+					}
+				}
+			}
+
+			.log {
+			  color: var(--subtext0);
+
+			  .count, .time {
+				  color: var(--blue);
+			  }
 			}
 		}
 	}
