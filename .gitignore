@@ -1,6 +1,9 @@
 # Scss output:
 .sass-cache/
 *.css
+*.css.map
+
+!template.css
 
 # nix
 result
