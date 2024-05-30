@@ -1,9 +1,11 @@
+@use "vendor/frappe" as palette;
+
 html:after {
   content: "Catppuccin Epitech Intranet";
   margin: .5rem;
   position: absolute;
   left: 0;
   bottom: 0;
-  color: white;
+  color: palette.$text;
   font-size: .8rem;
 };
