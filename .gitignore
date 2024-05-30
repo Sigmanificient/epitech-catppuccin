@@ -1,0 +1,6 @@
+# Scss output:
+.sass-cache/
+*.css
+
+# nix
+result
