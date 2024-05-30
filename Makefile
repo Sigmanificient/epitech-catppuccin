@@ -14,7 +14,7 @@ $(OUT): $(SRC)
 
 .PHONY: clean
 clean:
-	$(RM) $(OUT)
+	@ $(RM) $(OUT)
 
 .PHONY: re
 .NOTPARALLEL: re

@@ -1,21 +1,13 @@
 @use "vendor/frappe" as palette;
 
-/* Show wireframe for debugging */
-* {
-  outline: 1px solid red;
-  box-shadow: inset 0 0 0 100vw rgba(255, 0, 0, 0.01);
-
-  &:hover {
-    outline: 2px solid blue;
-  }
-}
+@forward "colors";
 
 html:after {
   content: "Catppuccin Epitech Intranet";
-  margin: .5rem;
   position: absolute;
   left: 0;
   bottom: 0;
+  margin: .5rem;
   color: palette.$text;
   font-size: .8rem;
 };

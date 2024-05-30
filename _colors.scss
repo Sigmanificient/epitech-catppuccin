@@ -1,0 +1,88 @@
+@use "vendor/frappe" as palette;
+
+body {
+  color: palette.$text;
+}
+
+a {
+  text-decoration: none !important;
+  color: palette.$blue !important;
+
+  &:hover {
+    color: palette.$lavender !important;
+  }
+}
+
+.navigation {
+  .button span.label {
+    background-color: palette.$surface1 !important;
+  }
+
+  .icon {
+    // force icon to be white
+    filter: brightness(5) saturate(0) brightness(5);
+  }
+}
+
+#header {
+  .intra {
+    background: none;
+    background-color: palette.$crust;
+  }
+
+  #identification {
+    &.expanded {
+      a.infos, .menu {
+        background-color: palette.$base;
+      }
+
+      span {
+        color: palette.$text;
+      }
+
+      .log-out > span {
+        color: palette.$red;
+
+        &:hover {
+          color: palette.$pink;
+        }
+      }
+    }
+
+    & > .infos {
+      background-color: palette.$base;
+
+      &:hover {
+        background: palette.$surface0;
+      }
+    }
+  }
+
+  #notification {
+    background-color: palette.$base;
+
+    .dropdown a:hover,
+    .dropdown.ui-expanded a {
+      background: palette.$blue;
+    }
+
+    .ui-expanded .layer {
+      box-shadow: none;
+      border: none;
+      background: palette.$base;
+
+      .empty {
+        color: palette.$subtext1;
+      }
+
+      .item {
+        background: palette.$surface0;
+        border: none;
+      }
+
+      .item:hover {
+        background: palette.$base;
+      }
+    }
+  }
+}
