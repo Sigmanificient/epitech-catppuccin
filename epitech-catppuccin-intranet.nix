@@ -1,17 +1,24 @@
 {
   stdenvNoCC,
-  sass,
+  dart-sass,
+  lib,
+  writers
 }:
+let
+ inject = writers.writePython3Bin "inject" {}
+  (builtins.readFile ./inject.py);
+in
 stdenvNoCC.mkDerivation {
   name = "epitech-catppuccin-intranet";
   version = "2.0.0";
 
   src = ./.;
 
-  buildInputs = [sass];
+  buildInputs = [dart-sass];
 
   buildPhase = ''
-    scss $src/style.scss -t compressed > style.css
+    sass -s compressed style.scss \
+      | ${lib.getExe inject} ${./template.css} | tee style.css
   '';
 
   installPhase = ''
